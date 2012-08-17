@@ -124,7 +124,7 @@ $baseurl = JURI::base();
 var __bannerCount = <?php echo count($list); ?>; 
 
 if(__bannerCount > 1) {
-    var interval = setTimeout(function() { activateOneBanner(0, __bannerCount, interval); }, 10000);
+    var interval = setTimeout(function() { activateOneBanner(1, __bannerCount, interval); }, 10000); // The first banner is always shown (see PHP code), so go to the second one after 10 seconds. 
 }
 
 function activateOneBanner(which, bannerCount, interval) {
