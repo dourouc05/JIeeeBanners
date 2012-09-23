@@ -14,6 +14,7 @@ defined('_JEXEC') or die;
 
 require_once JPATH_ROOT . '/components/com_banners/helpers/banner.php';
 $baseurl = JURI::base();
+shuffle($list);
 ?>
 <div class="bannergroup<?php echo $moduleclass_sfx ?>">
 <?php if ($headerText) : ?>
